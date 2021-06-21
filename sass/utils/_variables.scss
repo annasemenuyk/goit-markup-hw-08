@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --title-text-color: #212121;
+  --acsent-color: #2196f3;
+  --secondary-color: #757575;
+  --secondary-acsent-color: #ffffff;
+}
