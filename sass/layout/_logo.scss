@@ -29,3 +29,8 @@
   letter-spacing: 0.03em;
   color: var(--secondary-acsent-color);
 }
+@media screen and (min-width: 280px), (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+  }
+}

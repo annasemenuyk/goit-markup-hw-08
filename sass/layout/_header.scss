@@ -79,3 +79,12 @@
     fill: var(--acsent-color);
   }
 }
+@media screen and (min-width: 280px), (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+  .contacts__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px);
