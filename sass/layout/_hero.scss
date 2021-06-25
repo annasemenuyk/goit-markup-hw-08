@@ -1,34 +1,37 @@
-.hero {
-  display: block;
-  padding: 118px 60px;
-  margin-bottom: 60px;
-  height: 400px;
+..hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   outline: 1px solid #000000;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/fill/header_mob.jpg);
+    url(../images/fill/new_photo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .hero__title {
-  display: block;
-  text-align: center;
-  margin-bottom: 30px;
   font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-acsent-color);
-  font-size: 26px;
-  line-height: 1.62;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
-
 .hero__button {
+  display: inline-block;
   padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
@@ -51,6 +54,7 @@
     background-color: var(--acsent-color);
   }
 }
+
 @media (min-divice-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {

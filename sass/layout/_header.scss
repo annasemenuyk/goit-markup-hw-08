@@ -1,23 +1,29 @@
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
-}
+//.header {
+//  padding-top: 24px;
+//  padding-bottom: 24px;
+//  border-bottom: 1px solid #ececec;
+//}
 .header__container,
 .nav {
   display: flex;
   align-items: center;
 }
-
-/*Верхняя линия навигация*/
+@media screen and (max-width: 767px) {
+  .nav__list,
+  .nav__item {
+    display: none;
+    .logo__upline{position: relative;}
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px)
 .nav__list {
   display: flex;
   margin-left: 93px;
 }
-
+.nav__item {
+display: block;}}
 .nav__item {
   position: relative;
-  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -79,12 +85,3 @@
     fill: var(--acsent-color);
   }
 }
-@media screen and (min-width: 280px), (max-width: 767px) {
-  .nav__list {
-    display: none;
-  }
-  .contacts__list {
-    display: none;
-  }
-}
-//@media screen and (max-width: 1199px);
