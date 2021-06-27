@@ -2,7 +2,6 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .working__list {
   display: flex;
   & .working__item:not(:first-child) {
@@ -41,4 +40,9 @@
   letter-spacing: 0.03em;
   color: var(--secondary-acsent-color);
   background: rgba(47, 48, 58, 0.8);
+}
+@media screen and (max-width: 1199px) {
+  .working {
+    display: none;
+  }
 }

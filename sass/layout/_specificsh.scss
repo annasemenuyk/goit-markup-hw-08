@@ -1,36 +1,10 @@
-.futures {
-  padding-top: 94px;
+.futures__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
-.futures__list {
-  display: flex;
-
-  &.futures__item {
-    flex-wrap: wrap;
-  }
-}
-.futures__item:not(:first-child) {
-  margin-left: 30px;
-}
-.futures__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
-}
-.specificsh__icon {
-  content: "";
-  width: 70px;
-  height: 70px;
-}
-
 .futures__title {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -38,11 +12,79 @@
   color: var(--title-text-color);
   text-transform: uppercase;
 }
-.futures__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
+.futures__box {
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+.specificsh__icon {
+  content: "";
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .futures__list {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .futures__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .futures__text {
+    text-align: left;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .futures__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .futures__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .futures__item:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+  .futures__box {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  .futures__title {
+    margin-bottom: 10px;
+  }
+  .futures__text {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .futures {
+    padding-top: 94px;
+  }
+  .futures__list {
+    display: flex;
+    &.futures__item {
+      flex-wrap: wrap;
+    }
+  }
+  .futures__item:not(:first-child) {
+    margin-left: 30px;
+  }
+  .futures__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .futures__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
