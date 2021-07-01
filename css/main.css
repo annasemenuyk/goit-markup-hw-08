@@ -725,7 +725,6 @@ img {
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    max-width: 1600px;
   }
   .upline__icon {
     margin-right: 10px;
@@ -903,7 +902,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     text-align: center;
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fill/desktop.jpg");
